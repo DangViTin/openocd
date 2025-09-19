@@ -1,6 +1,7 @@
-# OpenOCD build guide for Windows
+# OpenOCD
 
-1. Prepare **clean** MinGW, download and install MinGW at https://www.msys2.org/, download OpenOCD package at **Releases** section
+1. Prepare **clean** MinGW, download and install MinGW at https://www.msys2.org/, download [OpenOCD_package.zip](OpenOCD_package.zip) in this Git.
+
 2. Open MSYS2 MINGW32 terminal (the gray icon at **"C:\msys64\mingw32.exe”**), run update (terminal will close)
     
     ```bash
@@ -106,6 +107,9 @@
     cp /c/msys64/mingw32/bin/libgcc_s_dw2-1.dll ../OpenOCD_output/bin
     cp /c/msys64/mingw32/bin/libwinpthread-1.dll ../OpenOCD_output/bin
     ```
+    
+5. If you missing any .dll file, find it at **C:\msys64\mingw32\bin** and copy it to OpenOCD_output/bin/
+    
     
 
 Useful package when needed:
