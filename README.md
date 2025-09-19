@@ -43,7 +43,7 @@
     cd openocd-0.12.0
     
     # Latest version on Git
-    git clone --recursive https://github.com/openocd-org/openocd.git openocd
+    git clone --recursive https://github.com/DangViTin/openocd.git openocd
     cd openocd
     ./bootstrap
     ```
