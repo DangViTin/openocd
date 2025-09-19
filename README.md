@@ -1,4 +1,4 @@
-# OpenOCD
+# Build OpenOCD in Windows
 
 1. Prepare **clean** MinGW, download and install MinGW at https://www.msys2.org/, download [OpenOCD_package.zip](https://github.com/DangViTin/openocd/blob/master/OpenOCD_package.zip) in this Git.
 2. Open MSYS2 MINGW32 terminal (the gray icon at **"C:\msys64\mingw32.exe”**), run update (terminal will close)
