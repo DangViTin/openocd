@@ -1,7 +1,6 @@
 # OpenOCD
 
-1. Prepare **clean** MinGW, download and install MinGW at https://www.msys2.org/, download [OpenOCD_package.zip](OpenOCD_package.zip) in this Git.
-
+1. Prepare **clean** MinGW, download and install MinGW at https://www.msys2.org/, download [OpenOCD_package.zip](https://github.com/DangViTin/openocd/blob/master/OpenOCD_package.zip) in this Git.
 2. Open MSYS2 MINGW32 terminal (the gray icon at **"C:\msys64\mingw32.exe”**), run update (terminal will close)
     
     ```bash
@@ -9,13 +8,6 @@
     ```
     
 3. Open MSYS2 MINGW32 terminal again
-    
-    Go to OpenOCD package
-    
-    ```bash
-    cd <Your_OpenOCD_Location>
-    # cd /c/Data/OpenOCD_package/
-    ```
     
     Install online packages
     
@@ -25,6 +17,15 @@
     mingw-w64-i686-toolchain \
     mingw-w64-i686-libusb-win32 \
     mingw-w64-i686-hidapi
+    ```
+    
+    Extract and go to OpenOCD package folder
+    
+    ```bash
+    # Go to folder contain OpenOCD_package.zip, for eg:
+    # cd /c/Download/
+    unzip OpenOCD_package.zip
+    cd OpenOCD_package
     ```
     
     Install offline packages
@@ -94,7 +95,7 @@
     make -j12 && make install
     ```
     
-4. Finally, copy file into our folder
+4. Finally, copy files into **OpenOCD_output** inside **OpenOCD_package** folder
     
     ```bash
     mkdir -p ../OpenOCD_output/bin
